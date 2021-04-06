@@ -52,7 +52,6 @@
 
 .slide2 .content {
     background-image: url('../images/presentationBG2.jpg');
-    font-size: calc(.25em + 1.75vw);
 }
 
 .slide2 .content h2 {
@@ -88,6 +87,7 @@
 
 .slide3 .content {
     background-image: url('../images/presentationBG.jpg');
+    font-size: calc(.25em + 1.6vw);
 }
 
 .slide3 .content h2 {
@@ -121,6 +121,7 @@
 
 .slide4 .content {
     background-image: url('../images/presentationBG3.jpg');
+    font-size: calc(.25em + 1.6vw);
 }
 
 .slide4 .content .wrap {
