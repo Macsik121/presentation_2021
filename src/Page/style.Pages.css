@@ -52,6 +52,7 @@
 
 .slide2 .content {
     background-image: url('../images/presentationBG2.jpg');
+    font-size: calc(.25em + 1.75vw);
 }
 
 .slide2 .content h2 {
