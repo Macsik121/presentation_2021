@@ -45,6 +45,48 @@ function navigation(nav) {
     }
 }
 
+class Slide6 extends React.Component {
+    render() {
+        return (
+            <div className="slide6 slide">
+                <div className="content">
+                    <div className="container">
+                        <p className="text">
+                            Как итог, хочу сказать, что сейчас человечество максимально пытается как-то
+                            упростить свою жизнь. И у этого есть две стороны:<br />
+                            Положительная сторона: <br />
+                            Довольно большое количество людей сейчас стремятся войти в сферу IT
+                            и я считаю, что это очень хорошо, потому что эта сфера развивает логику,
+                            ты учишься решать проблемы, поставленные тебе задачи и так далее.
+                            Отрицательная: Есть люди, которые стремятся к совершенству, а есть те,
+                            кто любит жить на всём готовом и им не надо ничего делать, то есть, они
+                            живут себе и их устраивает своё развитие(на каком уровне оно ни было),
+                            не хотят улучшить качество своей жизни и т.д.
+                            <br />
+                            Сейчас мир технологий и кто, чем хочет заниматься – он сможет этим заниматься,
+                            потому что есть интернет, в котором невероятное количество полезной
+                            информации.
+                        </p>
+                        <h2>Спасибо за внимание!</h2>
+                    </div>
+                </div>
+                {navigation(
+                    [
+                        {
+                            to: 'slide5',
+                            text: 'Slide 5'
+                        },
+                        {
+                            to: 'slide7',
+                            text: 'Slide 7'
+                        }
+                    ]
+                )}
+            </div>
+        )
+    }
+}
+
 class Slide5 extends React.Component {
     render() {
         return (
@@ -76,13 +118,13 @@ class Slide5 extends React.Component {
 class Slide4 extends React.Component {
     render() {
         return (
-            <div className="slide4">
+            <div className="slide4 slide">
                 <div className="content">
                     <div className="container">
                         <h2>Plastic Ocean Barriers</h2>
                         <div className="wrap">
                             <div className="beginning">
-                                <p className="text">Plastic Ocean Barriers - барьеры, которые защищают воду от пластика</p>
+                                <p className="text">"Plastic Ocean Barriers" - барьеры, которые защищают воду от пластика</p>
                                 <p className="text">
                                     На экране, который не даёт проплыть мусору есть передатчики, по которым, через спутники можно определить месторасположение того или иного барьера.
                                 </p>
@@ -121,7 +163,7 @@ class Slide3 extends React.Component {
                         <h2>Platooning</h2>
                         <div className="beginning">
                             <p className="text">
-                                "Platooning" - не менее интересная технология, чем автоматизация постройки домов. Слово platooning означает беспилотное вождение грурзовых транспортов.
+                                "Platooning" - не менее интересная технология, чем автоматизация постройки домов. Слово "platooning" означает беспилотное вождение грурзовых транспортов.
                             </p>
                         </div>
                         <div className="end">
@@ -173,7 +215,7 @@ class Slide2 extends React.Component {
                                     className="walls"
                                 />
                                 <p className="text">
-                                    Эта индустрия подразумевает под собой максимальное внедрение информационных технологий в промышленность.
+                                    Эра таких технологий ещё называется “Индустрия 4.0”. Она подразумевает в себе максимальное внедрение информационных технологий в промышленность.
                                 </p>
                             </div>
                         </div>
@@ -205,10 +247,10 @@ class Slide1 extends React.Component {
                         <h2>LI-FI</h2>
                         <div className="beginning">
                             <img src={lifi} className="li-fi" alt="LI-FI"/>
-                            <p className="text"> LI-FI - это относительно новая технология, которая позваляет нам трансформировать электричество в невероятно быстрый поток данных. </p>
+                            <p className="text">"LI-FI" - это относительно новая технология, которая позваляет нам трансформировать электричество в невероятно быстрый поток данных. </p>
                         </div>
                         <div className="end">
-                            <p className="text">LI-FI примерно в 100 раз быстрее передаёт данные, чем WI-FI. Но у него есть и минусы: без хорошего освещения или от солнца LI-FI работать не будет, потому что он работает только от светодиодных ламп.</p>
+                            <p className="text">"LI-FI" примерно в 100 раз быстрее передаёт данные, чем WI-FI. Но у него есть и минусы: без хорошего освещения или от солнца "LI-FI" работать не будет, потому что он работает только от светодиодных ламп.</p>
                         </div>
                     </div>
                 </div>
@@ -267,4 +309,4 @@ class Introduction extends React.Component {
     }
 }
 
-export {Introduction, Slide1, Slide2, Slide3, Slide4, Slide5};
+export {Introduction, Slide1, Slide2, Slide3, Slide4, Slide5, Slide6};

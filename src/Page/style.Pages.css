@@ -87,7 +87,6 @@
 
 .slide3 .content {
     background-image: url('../images/presentationBG.jpg');
-    font-size: calc(.25em + 1.6vw);
 }
 
 .slide3 .content h2 {
@@ -121,7 +120,6 @@
 
 .slide4 .content {
     background-image: url('../images/presentationBG3.jpg');
-    font-size: calc(.25em + 1.6vw);
 }
 
 .slide4 .content .wrap {
@@ -151,4 +149,17 @@
 .slide5 .content .plastic-barriers {
     width: 100%;
     height: 100vh;
+}
+
+.slide6 .content {
+    background-image: url('../images/endBG.jpg');
+}
+
+.slide6 .content .text {
+    height: 70vh;
+}
+
+.slide6 .content h2 {
+    display: flex;
+    justify-content: flex-end;
 }
