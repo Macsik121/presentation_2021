@@ -46,6 +46,13 @@ function navigation(nav) {
 }
 
 class Slide6 extends React.Component {
+    // constructor() {
+    //     super();
+    //     this.nextSlide = this.nextSlide.bind(this);
+    // }
+    // nextSlide() {
+    //     return this.props.history.push('/slide7');
+    // }
     render() {
         return (
             <div className="slide6 slide">
@@ -75,10 +82,6 @@ class Slide6 extends React.Component {
                         {
                             to: 'slide5',
                             text: 'Slide 5'
-                        },
-                        {
-                            to: 'slide7',
-                            text: 'Slide 7'
                         }
                     ]
                 )}
@@ -88,10 +91,17 @@ class Slide6 extends React.Component {
 }
 
 class Slide5 extends React.Component {
+    constructor() {
+        super();
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide6');
+    }
     render() {
         return (
             <div className="slide5">
-                <div className="content">
+                <div className="content" onClick={this.nextSlide}>
                     <img
                         src={oceanBarriers}
                         alt="Plastic Barriers"
@@ -116,10 +126,17 @@ class Slide5 extends React.Component {
 }
 
 class Slide4 extends React.Component {
+    constructor() {
+        super();
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide5');
+    }
     render() {
         return (
             <div className="slide4 slide">
-                <div className="content">
+                <div className="content" onClick={this.nextSlide}>
                     <div className="container">
                         <h2>Plastic Ocean Barriers</h2>
                         <div className="wrap">
@@ -155,10 +172,17 @@ class Slide4 extends React.Component {
 }
 
 class Slide3 extends React.Component {
+    constructor() {
+        super();
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide4');
+    }
     render() {
         return (
             <div className="slide3 slide">
-                <div className="content">
+                <div className="content" onClick={this.nextSlide}>
                     <div className="container">
                         <h2>Platooning</h2>
                         <div className="beginning">
@@ -196,10 +220,17 @@ class Slide3 extends React.Component {
 }
 
 class Slide2 extends React.Component {
+    constructor() {
+        super();
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide3');
+    }
     render() {
         return (
             <div className="slide2 slide">
-                <div className="content">
+                <div className="content" onClick={this.nextSlide}>
                     <div className="container">
                         <h2>Autonomous Architecture</h2>
                         <div className="wrap">
@@ -239,10 +270,17 @@ class Slide2 extends React.Component {
 }
 
 class Slide1 extends React.Component {
+    constructor() {
+        super();
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide2');
+    }
     render() {
         return (
             <div className="slide1 slide">
-                <div className="content">
+                <div className="content" onClick={this.nextSlide}>
                     <div className="container">
                         <h2>LI-FI</h2>
                         <div className="beginning">
@@ -272,10 +310,18 @@ class Slide1 extends React.Component {
 }
 
 class Introduction extends React.Component {
+    constructor() {
+        super();
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide1');
+    }
     render() {
+        // return this.props.history.push('/slide3') It's redirect to /slide3;
         return (
             <div className="introduction slide">
-                <div className="content">
+                <div className="content" onClick={this.nextSlide}>
                     <div className="container">
                         <h1 className="topic">
                             Презентация на тему:
