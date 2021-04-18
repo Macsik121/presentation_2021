@@ -120,6 +120,7 @@
 
 .slide4 .content {
     background-image: url('../images/presentationBG3.jpg');
+    font-size: 2vw;
 }
 
 .slide4 .content .wrap {
@@ -155,11 +156,8 @@
     background-image: url('../images/endBG.jpg');
 }
 
-.slide6 .content .text {
-    height: 70vh;
-}
-
-.slide6 .content h2 {
+.slide6 h2 {
     display: flex;
     justify-content: flex-end;
+    margin-top: 15vh;
 }

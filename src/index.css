@@ -25,7 +25,6 @@ ul {
 a {
   color: #000;
   text-decoration: none;
-  font-size: 1.5vw;
 }
 
 .container {
@@ -68,13 +67,25 @@ a {
   color: #000;
 }
 
+@media (max-width: 700px) and (min-width: 600px) {
+  .slide4 .content .container {
+    font-size: 2.35vw;
+  }
+}
+
+@media (max-width: 599px) {
+  .slide4 .content .container {
+    font-size: 2.65vw;
+  }
+}
+
 @media (max-width: 550px) {
   body {
     font-size: calc(.25em + 2.75vw);
   }
   
   .slide2 .content .wrap {
-    font-size: calc(3vw);
+    font-size: calc(3.35vw);
     flex-direction: column;
   }
   
@@ -116,11 +127,11 @@ a {
     width: 85%;
   }
 
-  .slide4 .content {
-    font-size: calc(2.5vw);
+  .slide6 .content {
+    font-size: 3.15vw;
   }
 
-  .slide6 .content {
-    font-size: 2.5vw;
+  .slide6 .content h2 {
+    margin-top: 5vh;
   }
 }
