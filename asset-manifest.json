@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/presentation_2021/static/css/main.91fc1e38.chunk.css",
+    "main.css": "/presentation_2021/static/css/main.8e2515cc.chunk.css",
     "main.js": "/presentation_2021/static/js/main.a8b14ce3.chunk.js",
     "main.js.map": "/presentation_2021/static/js/main.a8b14ce3.chunk.js.map",
     "runtime-main.js": "/presentation_2021/static/js/runtime-main.1fecbd97.js",
@@ -10,7 +10,7 @@
     "static/js/3.ab92d4e6.chunk.js": "/presentation_2021/static/js/3.ab92d4e6.chunk.js",
     "static/js/3.ab92d4e6.chunk.js.map": "/presentation_2021/static/js/3.ab92d4e6.chunk.js.map",
     "index.html": "/presentation_2021/index.html",
-    "static/css/main.91fc1e38.chunk.css.map": "/presentation_2021/static/css/main.91fc1e38.chunk.css.map",
+    "static/css/main.8e2515cc.chunk.css.map": "/presentation_2021/static/css/main.8e2515cc.chunk.css.map",
     "static/js/2.38fd4e72.chunk.js.LICENSE.txt": "/presentation_2021/static/js/2.38fd4e72.chunk.js.LICENSE.txt",
     "static/media/style.Pages.css": "/presentation_2021/static/media/presentationBG3.72e84a0c.jpg",
     "static/media/lifi.7ab30bb6.png": "/presentation_2021/static/media/lifi.7ab30bb6.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.1fecbd97.js",
     "static/js/2.38fd4e72.chunk.js",
-    "static/css/main.91fc1e38.chunk.css",
+    "static/css/main.8e2515cc.chunk.css",
     "static/js/main.a8b14ce3.chunk.js"
   ]
 }
