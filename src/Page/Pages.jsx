@@ -5,6 +5,7 @@ import lifi from '../images/lifi.png';
 import theBiggestPrintedBuildingWalls from '../images/biggest-printed-building-walls.jpeg';
 import platooning from '../images/platooning.jpeg';
 import oceanBarriers from '../images/plastic-ocean-barriers.png';
+import hydroponics from '../images/hydroponics.jpg'; 
 
 function navigation(nav) {
     const navigation = nav;
@@ -45,18 +46,18 @@ function navigation(nav) {
     }
 }
 
-class Slide6 extends React.Component {
+class Slide8 extends React.Component {
     constructor() {
         super();
         window.onkeyup = function(e) {
             if (e.key === 'ArrowLeft') {
-                return this.props.history.push('/slide5');
+                return this.props.history.push('/slide7');
             }
         }.bind(this);
     }
     render() {
         return (
-            <div className="slide6 slide">
+            <div className="slide8 slide">
                 <div className="content">
                     <div className="container">
                         <p className="text">
@@ -81,8 +82,108 @@ class Slide6 extends React.Component {
                 {navigation(
                     [
                         {
+                            to: 'slide7',
+                            text: 'Slide 7'
+                        }
+                    ]
+                )}
+            </div>
+        )
+    }
+}
+
+class Slide7 extends React.Component {
+    constructor() {
+        super();
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide6');
+            } else if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide8');
+            }
+        }.bind(this);
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide8');
+    }
+    render() {
+        return (
+            <div className="slide7 slide">
+                <div className="content" onClick={this.nextSlide}>
+                    <div className="container">
+                        <h2>IoE</h2>
+                    </div>
+                </div>
+                {navigation(
+                    [
+                        {
+                            to: 'slide6',
+                            text: 'Slide 6'
+                        },
+                        {
+                            to: 'slide8',
+                            text: 'Slide 8'
+                        }
+                    ]
+                )}
+            </div>
+        )
+    }
+}
+
+class Slide6 extends React.Component {
+    constructor() {
+        super();
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide7');
+            } else if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide5');
+            }
+        }.bind(this);
+        this.nextSlide = this.nextSlide.bind(this);
+    }
+    nextSlide() {
+        return this.props.history.push('/slide7');
+    }
+    render() {
+        return (
+            <div className="slide6 slide">
+                <div className="content" onClick={this.nextSlide}>
+                    <div className="container">
+                        <h2>Hydroponics</h2>
+                        <div className="wrap">
+                            <div className="beginning">
+                                <p className="text">
+                                    Слово hydroponics означает целую систему выращивания растений, не используя почву/землю.
+                                </p>
+                                <p className="text">
+                                    Эта система выращивания растений может не только оптимизировать процесс выращивания растений, но и качество растений, как минимум, не упадёт.
+                                </p>
+                            </div>
+                            <div className="end">
+                                <img
+                                    src={hydroponics}
+                                    alt="Hydroponics"
+                                    className="hydroponics"
+                                />
+                                <p className="text">
+                                    Но в чём отличие такого выращивания от выращивания традиционным способом?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {navigation(
+                    [
+                        {
                             to: 'slide5',
                             text: 'Slide 5'
+                        },
+                        {
+                            to: 'slide7',
+                            text: 'Slide 7'
                         }
                     ]
                 )}
@@ -396,4 +497,14 @@ class Introduction extends React.Component {
     }
 }
 
-export {Introduction, Slide1, Slide2, Slide3, Slide4, Slide5, Slide6};
+export {
+    Introduction,
+    Slide1,
+    Slide2,
+    Slide3,
+    Slide4,
+    Slide5,
+    Slide6,
+    Slide7,
+    Slide8
+};

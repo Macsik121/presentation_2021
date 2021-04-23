@@ -153,10 +153,28 @@
 }
 
 .slide6 .content {
+    background-image: url('../images/presentationBG4.jpg');
+    color: #000;
+}
+
+.slide6 .content h2 {
+    text-align: center;
+}
+
+.slide6 .content .wrap {
+    margin-top: 5vh;
+    display: flex;
+}
+
+.slide7 .content {
+    background-image: url('../images/presentationBG.jpg');
+}
+
+.slide8 .content {
     background-image: url('../images/endBG.jpg');
 }
 
-.slide6 h2 {
+.slide8 h2 {
     display: flex;
     justify-content: flex-end;
     margin-top: 15vh;

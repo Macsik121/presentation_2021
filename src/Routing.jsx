@@ -7,7 +7,9 @@ import {
     Slide3,
     Slide4,
     Slide5,
-    Slide6
+    Slide6,
+    Slide7,
+    Slide8
 } from './Page/Pages';
 
 class NotFound extends React.Component {
@@ -33,7 +35,9 @@ class Routing extends React.Component {
                 <Route exact path='/slide3' component={Slide3} />
                 <Route exact path='/slide4' component={Slide4} />
                 <Route exact path='/slide5' component={Slide5} />
-                <Route exact path="/slide6" component={Slide6} />
+                <Route exact path='/slide6' component={Slide6} />
+                <Route exact path='/slide7' component={Slide7} />
+                <Route exact path='/slide8' component={Slide8} />
                 <Redirect exact from='/' to='/introduction' />
                 <Redirect exact from='/presentation_2021' to='/introduction' />
                 <Route component={NotFound} />
