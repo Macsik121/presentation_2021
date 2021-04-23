@@ -46,13 +46,14 @@ function navigation(nav) {
 }
 
 class Slide6 extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.nextSlide = this.nextSlide.bind(this);
-    // }
-    // nextSlide() {
-    //     return this.props.history.push('/slide7');
-    // }
+    constructor() {
+        super();
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide5');
+            }
+        }.bind(this);
+    }
     render() {
         return (
             <div className="slide6 slide">
@@ -94,6 +95,13 @@ class Slide5 extends React.Component {
     constructor() {
         super();
         this.nextSlide = this.nextSlide.bind(this);
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide4');
+            } else if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide6');
+            }
+        }.bind(this);
     }
     nextSlide() {
         return this.props.history.push('/slide6');
@@ -129,6 +137,13 @@ class Slide4 extends React.Component {
     constructor() {
         super();
         this.nextSlide = this.nextSlide.bind(this);
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide3');
+            } else if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide5');
+            }
+        }.bind(this);
     }
     nextSlide() {
         return this.props.history.push('/slide5');
@@ -175,6 +190,13 @@ class Slide3 extends React.Component {
     constructor() {
         super();
         this.nextSlide = this.nextSlide.bind(this);
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide2');
+            } else if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide4');
+            }
+        }.bind(this);
     }
     nextSlide() {
         return this.props.history.push('/slide4');
@@ -223,6 +245,13 @@ class Slide2 extends React.Component {
     constructor() {
         super();
         this.nextSlide = this.nextSlide.bind(this);
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/slide1');
+            } else if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide3');
+            }
+        }.bind(this);
     }
     nextSlide() {
         return this.props.history.push('/slide3');
@@ -273,6 +302,13 @@ class Slide1 extends React.Component {
     constructor() {
         super();
         this.nextSlide = this.nextSlide.bind(this);
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowLeft') {
+                return this.props.history.push('/introduction');
+            } else if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide2');
+            }
+        }.bind(this);
     }
     nextSlide() {
         return this.props.history.push('/slide2');
@@ -313,12 +349,17 @@ class Introduction extends React.Component {
     constructor() {
         super();
         this.nextSlide = this.nextSlide.bind(this);
+        window.onkeyup = function(e) {
+            if (e.key === 'ArrowRight') {
+                return this.props.history.push('/slide1');
+            }
+            console.log(e);
+        }.bind(this);
     }
     nextSlide() {
         return this.props.history.push('/slide1');
     }
     render() {
-        // return this.props.history.push('/slide3') It's redirect to /slide3;
         return (
             <div className="introduction slide">
                 <div className="content" onClick={this.nextSlide}>
