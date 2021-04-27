@@ -6,19 +6,23 @@ import theBiggestPrintedBuildingWalls from '../images/biggest-printed-building-w
 import platooning from '../images/platooning.jpeg';
 import oceanBarriers from '../images/plastic-ocean-barriers.png';
 import hydroponics from '../images/hydroponics.jpg'; 
+import ioe from '../images/IoE.jpeg'
 
-function navigation(nav) {
+function navigation(nav) {    
     const navigation = nav;
+
+    let link_id = 0;
 
     const jsxlinks = [];
     
     navigation.map(route => {
+        link_id++;
         return jsxlinks.push(
                 <li className="link-to">
                     <Link
                         to={"/" + route.to}
                         className="link-to"
-                        key={jsxlinks.length}
+                        key={link_id}
                     >
                         {route.text}
                     </Link>
@@ -113,6 +117,26 @@ class Slide7 extends React.Component {
                 <div className="content" onClick={this.nextSlide}>
                     <div className="container">
                         <h2>IoE</h2>
+                        <div className="wrap">
+                            <div className="beginning">
+                                <img
+                                    src={ioe}
+                                    alt="Internet of Ears"
+                                    className="ioe"
+                                />
+                                <p className="text">
+                                    Но, технический прогресс в создании IoT уже есть и было бы неплохо её осуществить до конца.
+                                </p>
+                            </div>
+                            <div className="end">
+                                <p className="text">
+                                    "Internet of ears" - "интернет ушей" или "слушающий интернет".
+                                </p>
+                                <p className="text">
+                                    Сейчас, пока что, человечество ещё не придумало какие-то приспособления или программы, чтобы достичь результата под названием "IoE(слушающий интернет)"
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {navigation(

@@ -80,10 +80,6 @@ a {
 }
 
 @media (max-width: 550px) {
-  body {
-    font-size: calc(.25em + 2.75vw);
-  }
-  
   .slide2 .content .wrap {
     font-size: calc(3.35vw);
     flex-direction: column;
