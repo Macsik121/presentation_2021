@@ -5,6 +5,7 @@ import lifi from '../images/lifi.png';
 import theBiggestPrintedBuildingWalls from '../images/biggest-printed-building-walls.jpeg';
 import platooning from '../images/platooning.jpeg';
 import oceanBarriers from '../images/plastic-ocean-barriers.png';
+import oceanBarriersPicture from '../images/plastic_ocean_barriers.jpg'
 import hydroponics from '../images/hydroponics.jpg'; 
 import ioe from '../images/IoE.jpeg'
 
@@ -135,6 +136,9 @@ class Slide7 extends React.Component {
                                 <p className="text">
                                     Сейчас, пока что, человечество ещё не придумало какие-то приспособления или программы, чтобы достичь результата под названием "IoE(слушающий интернет)"
                                 </p>
+                                <p className="text">
+                                    Пример: We're also seeing the rise of products that combine both the Internet of Eyes and the Internet of Ears.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -184,6 +188,9 @@ class Slide6 extends React.Component {
                                 </p>
                                 <p className="text">
                                     Эта система выращивания растений может не только оптимизировать процесс выращивания растений, но и качество растений, как минимум, не упадёт.
+                                </p>
+                                <p className="text">
+                                    Пример: Hydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent.
                                 </p>
                             </div>
                             <div className="end">
@@ -283,13 +290,21 @@ class Slide4 extends React.Component {
                             <div className="beginning">
                                 <p className="text">"Plastic Ocean Barriers" - барьеры, которые защищают воду от пластика</p>
                                 <p className="text">
-                                    На экране, который не даёт проплыть мусору есть передатчики, по которым, через спутники можно определить месторасположение того или иного барьера.
+                                Они спасают наши всемирные океаны от людей, которые просто выбрасывают мусор в воду и из-за этого гибнет от 600тыс до 800тыс тонн рыбы ежегодно.
+                                </p>
+                            </div>
+                            <div className="main">
+                                <p className="text">
+                                    На экране, который не даёт проплыть мусору есть передатчики, по которым, через спутники можно определить месторасположение того или иного барьера.                                    
                                 </p>
                             </div>
                             <div className="end">
-                                <p className="text">
-                                    Они спасают наши всемирные океаны от людей, которые просто выбрасывают мусор в воду и из-за этого гибнет от 600тыс до 800тыс тонн рыбы ежегодно.
-                                </p>
+                                <img
+                                    src={oceanBarriersPicture}
+                                    className="picture"
+                                    alt="Plastic Ocean Barriers"
+                                />
+                                <p className="text">Пример использования этого слова в разговорной речи: The organisation has designed 600-metre-long plastic barriers designed to passively gather plastic as they float around in the ocean.</p>
                             </div>
                         </div>
                     </div>
